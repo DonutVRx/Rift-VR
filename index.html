@@ -1,6 +1,74 @@
-<html>
-  <head>
-    <title>Rift VR Website</title>
-    
-  </head>
-</html>
+export default function NeonRiftVRWebsite() {
+  return (
+    <div className="min-h-screen bg-black text-white overflow-hidden">
+      {/* Background Glow */}
+      <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 via-purple-500/10 to-pink-500/20 blur-3xl" />
+
+      {/* Hero Section */}
+      <section className="relative z-10 flex flex-col items-center justify-center text-center min-h-screen px-6">
+        <div className="border border-cyan-400/40 bg-white/5 backdrop-blur-md rounded-3xl p-10 shadow-2xl max-w-4xl">
+          <h1 className="text-6xl md:text-8xl font-black tracking-tight bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500 bg-clip-text text-transparent">
+            Neon Rift VR
+          </h1>
+
+          <p className="mt-6 text-lg md:text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+            Enter a glowing cyberpunk universe where speed, movement, and futuristic battles collide in virtual reality.
+          </p>
+
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <button className="px-8 py-4 rounded-2xl bg-cyan-400 text-black font-bold text-lg hover:scale-105 transition-transform shadow-lg shadow-cyan-400/40">
+              Wishlist Now
+            </button>
+
+            <button className="px-8 py-4 rounded-2xl border border-purple-400 text-purple-300 font-bold text-lg hover:bg-purple-500/10 transition-colors">
+              Watch Trailer
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Features */}
+      <section className="relative z-10 py-24 px-6">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-16">
+            Why Players Love It
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white/5 border border-cyan-400/20 rounded-3xl p-8 backdrop-blur-md hover:-translate-y-2 transition-transform">
+              <h3 className="text-2xl font-bold text-cyan-300 mb-4">
+                Fast VR Movement
+              </h3>
+              <p className="text-gray-300 leading-relaxed">
+                Dash, wall-run, and launch yourself through neon arenas with fluid VR controls.
+              </p>
+            </div>
+
+            <div className="bg-white/5 border border-purple-400/20 rounded-3xl p-8 backdrop-blur-md hover:-translate-y-2 transition-transform">
+              <h3 className="text-2xl font-bold text-purple-300 mb-4">
+                Cyberpunk World
+              </h3>
+              <p className="text-gray-300 leading-relaxed">
+                Explore glowing cities, underground tunnels, and futuristic battle zones.
+              </p>
+            </div>
+
+            <div className="bg-white/5 border border-pink-400/20 rounded-3xl p-8 backdrop-blur-md hover:-translate-y-2 transition-transform">
+              <h3 className="text-2xl font-bold text-pink-300 mb-4">
+                Multiplayer Chaos
+              </h3>
+              <p className="text-gray-300 leading-relaxed">
+                Compete with friends in intense online VR matches and custom game modes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="relative z-10 border-t border-white/10 py-8 text-center text-gray-400">
+        <p>© 2026 Neon Rift VR. All rights reserved.</p>
+      </footer>
+    </div>
+  )
+}
