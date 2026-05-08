@@ -1,94 +1,97 @@
-export default function NeonRiftVRWebsite() {
-  return (
-    <div className="min-h-screen bg-black text-white overflow-x-hidden relative">
-      {/* Background Glow */}
-      <div className="fixed inset-0 bg-gradient-to-br from-cyan-500/20 via-purple-500/10 to-pink-500/20 blur-3xl" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neon Rift VR</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-black text-white overflow-x-hidden relative">
+  <!-- Background Glow -->
+  <div class="fixed inset-0 bg-gradient-to-br from-cyan-500/20 via-purple-500/10 to-pink-500/20 blur-3xl"></div>
 
-      {/* Hero Section */}
-      <section className="relative z-10 flex flex-col items-center justify-center text-center min-h-screen px-6">
-        <div className="border border-cyan-400/40 bg-white/5 backdrop-blur-md rounded-3xl p-10 shadow-2xl max-w-4xl">
-          <h1 className="text-6xl md:text-8xl font-black tracking-tight bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500 bg-clip-text text-transparent">
-            Neon Rift VR
-          </h1>
+  <!-- Hero Section -->
+  <section class="relative z-10 flex flex-col items-center justify-center text-center min-h-screen px-6">
+    <div class="border border-cyan-400/40 bg-white/5 backdrop-blur-md rounded-3xl p-10 shadow-2xl max-w-4xl mx-auto mt-20">
+      <h1 class="text-6xl md:text-8xl font-black tracking-tight bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500 bg-clip-text text-transparent">
+        Neon Rift VR
+      </h1>
 
-          <p className="mt-6 text-lg md:text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            Enter a glowing cyberpunk universe where speed, movement, and futuristic battles collide in virtual reality.
-          </p>
+      <p class="mt-6 text-lg md:text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+        Enter a glowing cyberpunk universe where speed, movement, and futuristic battles collide in virtual reality.
+      </p>
 
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <a
-              href="https://youtube.com/@neonriftvr"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-4 rounded-2xl bg-cyan-400 text-black font-bold text-lg hover:scale-105 transition-transform shadow-lg shadow-cyan-400/40"
-            >
-              Watch Development
-            </a>
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <a
+          href="https://youtube.com/@neonriftvr"
+          target="_blank"
+          class="px-8 py-4 rounded-2xl bg-cyan-400 text-black font-bold text-lg hover:scale-105 transition-transform shadow-lg shadow-cyan-400/40 inline-block"
+        >
+          Watch Development
+        </a>
 
-            <a
-              href="https://discord.gg/Dk6h5BXKBz"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-4 rounded-2xl border border-purple-400 text-purple-300 font-bold text-lg hover:bg-purple-500/10 transition-colors"
-            >
-              Join Discord
-            </a>
-          </div>
+        <a
+          href="https://discord.gg/Dk6h5BXKBz"
+          target="_blank"
+          class="px-8 py-4 rounded-2xl border border-purple-400 text-purple-300 font-bold text-lg hover:bg-purple-500/10 transition-colors inline-block"
+        >
+          Join Discord
+        </a>
+      </div>
 
-          <div className="mt-8 flex flex-wrap justify-center gap-3 text-sm md:text-base text-gray-400">
-            <span className="px-4 py-2 rounded-full bg-white/5 border border-cyan-400/20">
-              Unreleased VR Game
-            </span>
+      <div class="mt-8 flex flex-wrap justify-center gap-3 text-sm md:text-base text-gray-400">
+        <span class="px-4 py-2 rounded-full bg-white/5 border border-cyan-400/20">
+          Unreleased VR Game
+        </span>
 
-            <span className="px-4 py-2 rounded-full bg-white/5 border border-purple-400/20">
-              Meta Quest Exclusive
-            </span>
-          </div>
-        </div>
-      </section>
-
-      {/* Features */}
-      <section className="relative z-10 py-24 px-6">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-16">
-            Why Players Love It
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white/5 border border-cyan-400/20 rounded-3xl p-8 backdrop-blur-md hover:-translate-y-2 transition-transform">
-              <h3 className="text-2xl font-bold text-cyan-300 mb-4">
-                Fast VR Movement
-              </h3>
-              <p className="text-gray-300 leading-relaxed">
-                Dash, wall-run, and launch yourself through neon arenas with fluid VR controls.
-              </p>
-            </div>
-
-            <div className="bg-white/5 border border-purple-400/20 rounded-3xl p-8 backdrop-blur-md hover:-translate-y-2 transition-transform">
-              <h3 className="text-2xl font-bold text-purple-300 mb-4">
-                Cyberpunk World
-              </h3>
-              <p className="text-gray-300 leading-relaxed">
-                Explore glowing cities, underground tunnels, and futuristic battle zones.
-              </p>
-            </div>
-
-            <div className="bg-white/5 border border-pink-400/20 rounded-3xl p-8 backdrop-blur-md hover:-translate-y-2 transition-transform">
-              <h3 className="text-2xl font-bold text-pink-300 mb-4">
-                Multiplayer Chaos
-              </h3>
-              <p className="text-gray-300 leading-relaxed">
-                Compete with friends in intense online VR matches and custom game modes.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="relative z-10 border-t border-white/10 py-8 text-center text-gray-400">
-        <p>© 2026 Neon Rift VR. All rights reserved.</p>
-      </footer>
+        <span class="px-4 py-2 rounded-full bg-white/5 border border-purple-400/20">
+          Meta Quest Exclusive
+        </span>
+      </div>
     </div>
-  )
-}
+  </section>
+
+  <!-- Features -->
+  <section class="relative z-10 py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-16">
+        Why Players Love It
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white/5 border border-cyan-400/20 rounded-3xl p-8 backdrop-blur-md hover:-translate-y-2 transition-transform">
+          <h3 class="text-2xl font-bold text-cyan-300 mb-4">
+            Fast VR Movement
+          </h3>
+          <p class="text-gray-300 leading-relaxed">
+            Dash, wall-run, and launch yourself through neon arenas with fluid VR controls.
+          </p>
+        </div>
+
+        <div class="bg-white/5 border border-purple-400/20 rounded-3xl p-8 backdrop-blur-md hover:-translate-y-2 transition-transform">
+          <h3 class="text-2xl font-bold text-purple-300 mb-4">
+            Cyberpunk World
+          </h3>
+          <p class="text-gray-300 leading-relaxed">
+            Explore glowing cities, underground tunnels, and futuristic battle zones.
+          </p>
+        </div>
+
+        <div class="bg-white/5 border border-pink-400/20 rounded-3xl p-8 backdrop-blur-md hover:-translate-y-2 transition-transform">
+          <h3 class="text-2xl font-bold text-pink-300 mb-4">
+            Multiplayer Chaos
+          </h3>
+          <p class="text-gray-300 leading-relaxed">
+            Compete with friends in intense online VR matches and custom game modes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="relative z-10 border-t border-white/10 py-8 text-center text-gray-400">
+    <p>© 2026 Neon Rift VR. All rights reserved.</p>
+  </footer>
+</body>
+</html>
